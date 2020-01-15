@@ -20,7 +20,11 @@ The code is released under the MIT License.
 - Unzip the file. Edit the `save_path` and `rec_path` in make_extracted.py. Run this script to extract image from mx_rec data.
 - Edit the `conf.data_path` in config.py with `save_path` mentioned above.
 - For data augmentation, we simply apply horizental flip. If you want use more complicated process to achieve higher performance, please refer to [face.evoLVe](https://github.com/ZhaoJ9014/face.evoLVe.PyTorch/) which proved good examples.
+
 ### Model Training and Validation
 - Hyper parameters such as batch-size, learning rate can be edited in train.py.
 - Run train.py to train and validate the model. 
 - Use tensorboard to monitor the training log : `tensorboard --logdir='./'`.
+
+## Acknowledgement 
+- This repo is inspired by [InsightFace.MXNet](https://github.com/deepinsight/insightface), [InsightFace.PyTorch](https://github.com/TreB1eN/InsightFace_Pytorch), [face.evoLVe.PyTorch](https://github.com/ZhaoJ9014/face.evoLVe.PyTorch)
