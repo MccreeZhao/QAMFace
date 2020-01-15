@@ -22,7 +22,8 @@ The code is released under the MIT License.
 - For data augmentation, we simply apply horizental flip. If you want use more complicated process to achieve higher performance, please refer to [face.evoLVe](https://github.com/ZhaoJ9014/face.evoLVe.PyTorch/) which proved good examples.
 
 ### Model Training and Validation
-- Hyper parameters such as batch-size, learning rate can be edited in train.py.
+- Hyper parameters such as batch-size, learning rate can be edited in train.py. 
+- Hyper parameters of loss functions such as $s$ and $m$ can be edited in model.py
 - Run train.py to train and validate the model. 
 - Use tensorboard to monitor the training log : `tensorboard --logdir='./'`.
 
