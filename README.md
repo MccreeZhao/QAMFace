@@ -30,8 +30,9 @@ The code is released under the MIT License.
 ### model
 
 |Backbone|Head|Loss|Training Data|
-  |:---:|:---:|:---:|:---:|:---:|
+  |:---:|:---:|:---:|:---:|
   |[IRSE-50](https://arxiv.org/pdf/1801.07698.pdf)|[ArcFace]( http://openaccess.thecvf.com/content_CVPR_2019/html/Deng_ArcFace_Additive_Angular_Margin_Loss_for_Deep_Face_Recognition_CVPR_2019_paper.html)|[Focal](https://arxiv.org/pdf/1708.02002.pdf)|[emore](https://arxiv.org/pdf/1607.08221.pdf)|
+  
 ### Setting)
 - INPUT_SIZE: [112, 112]
 - BATCH_SIZE: 256 (drop the last batch to ensure consistent batch_norm statistics)
