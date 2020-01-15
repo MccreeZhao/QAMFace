@@ -49,4 +49,7 @@ The code is released under the MIT License.
 |99.82|99.89|98.04|98.12|96.12|92.80|95.64|
 
 ## Acknowledgement 
-- This repo is inspired by [InsightFace.MXNet](https://github.com/deepinsight/insightface), [InsightFace.PyTorch](https://github.com/TreB1eN/InsightFace_Pytorch), [face.evoLVe.PyTorch](https://github.com/ZhaoJ9014/face.evoLVe.PyTorch)
+- This repo is inspired by 
+  - [InsightFace.MXNet](https://github.com/deepinsight/insightface)
+  - [InsightFace.PyTorch](https://github.com/TreB1eN/InsightFace_Pytorch)
+  - [face.evoLVe.PyTorch](https://github.com/ZhaoJ9014/face.evoLVe.PyTorch)
