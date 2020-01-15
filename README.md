@@ -23,7 +23,7 @@ The code is released under the MIT License.
 
 ### Model Training and Validation
 - Hyper parameters such as batch-size, learning rate can be edited in train.py. 
-- Hyper parameters of loss functions such as $s$ and $m$ can be edited in model.py
+- Hyper parameters of loss functions such as s and m can be edited in model.py
 - Run train.py to train and validate the model. 
 - Use tensorboard to monitor the training log : `tensorboard --logdir='./'`.
 
