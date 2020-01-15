@@ -12,7 +12,7 @@ The code is released under the MIT License.
 * tensorboardX 1.4 (optional, for visualization, install w/ `pip install tensorboardX`)
 * OpenCV 3 (install w/ `pip install opencv-python`)
 * bcolz 1.2.0 (install w/ `pip install bcolz`)
- We used 4 NVIDIA RTX 2080ti in parallel. More GPUs which support larger batch-size may perform better.
+ We used 4 NVIDIA RTX 2080Ti in parallel. More GPUs which support larger batch-size may perform better.
  
 ## Usage
 ### Data Preprocess
@@ -25,6 +25,28 @@ The code is released under the MIT License.
 - Hyper parameters such as batch-size, learning rate can be edited in train.py.
 - Run train.py to train and validate the model. 
 - Use tensorboard to monitor the training log : `tensorboard --logdir='./'`.
+
+## Performance
+### model
+
+|Backbone|Head|Loss|Training Data|Download Link|
+  |:---:|:---:|:---:|:---:|:---:|
+  |[IRSE-50](https://arxiv.org/pdf/1801.07698.pdf)|[ArcFace]( http://openaccess.thecvf.com/content_CVPR_2019/html/Deng_ArcFace_Additive_Angular_Margin_Loss_for_Deep_Face_Recognition_CVPR_2019_paper.html)|[Focal](https://arxiv.org/pdf/1708.02002.pdf)|[emore](https://arxiv.org/pdf/1607.08221.pdf)|[Dataset Zoo](https://github.com/deepinsight/insightface/wiki/Dataset-Zoo)
+### Setting)
+- INPUT_SIZE: [112, 112]
+- BATCH_SIZE: 256 (drop the last batch to ensure consistent batch_norm statistics)
+- Initial LR: 0.2; 
+- NUM_EPOCH: 22;
+- WEIGHT_DECAY: 5e-4 (do not apply to batch_norm parameters); 
+- MOMENTUM: 0.9; STAGES: [30, 60, 90]; 
+- Augmentation: Horizontal Flip;
+- Solver: SGD; 
+- GPUs: 4 NVIDIA RTX 2080Ti in Parallel
+### Performance
+
+|[LFW](https://hal.inria.fr/file/index/docid/321923/filename/Huang_long_eccv2008-lfw.pdf)|[CFP_FF](http://www.cfpw.io/paper.pdf)|[CFP_FP](http://www.cfpw.io/paper.pdf)|[AgeDB](http://openaccess.thecvf.com/content_cvpr_2017_workshops/w33/papers/Moschoglou_AgeDB_The_First_CVPR_2017_paper.pdf)|[CALFW](https://arxiv.org/pdf/1708.08197.pdf)|[CPLFW](http://www.whdeng.cn/CPLFW/Cross-Pose-LFW.pdf)|[Vggface2_FP](https://arxiv.org/pdf/1710.08092.pdf)|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|99.82|99.89|98.04|98.12|96.12|92.80|95.64|
 
 ## Acknowledgement 
 - This repo is inspired by [InsightFace.MXNet](https://github.com/deepinsight/insightface), [InsightFace.PyTorch](https://github.com/TreB1eN/InsightFace_Pytorch), [face.evoLVe.PyTorch](https://github.com/ZhaoJ9014/face.evoLVe.PyTorch)
