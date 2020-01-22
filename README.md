@@ -1,5 +1,5 @@
 # QAMFace
-Pytorch implementation for Quadratic Additive Angular Margin Loss for Face Recognition (under review)
+Pytorch implementation for **Quadratic Additive Angular Margin Loss for Face Recognition** (under review)
 ## License
 The code is released under the MIT License.
 ## News
