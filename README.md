@@ -1,5 +1,5 @@
 # QAMFace
-Pytorch implementation for **Quadratic Additive Angular Margin Loss for Face Recognition** (under review)
+Pytorch implementation for **[Quadratic Additive Angular Margin Loss for Face Recognition](https://ieeexplore.ieee.org/document/9191004)** 
 ## License
 The code is released under the MIT License.
 ## News
@@ -55,3 +55,15 @@ The code is released under the MIT License.
   - [InsightFace.MXNet](https://github.com/deepinsight/insightface)
   - [InsightFace.PyTorch](https://github.com/TreB1eN/InsightFace_Pytorch)
   - [face.evoLVe.PyTorch](https://github.com/ZhaoJ9014/face.evoLVe.PyTorch)
+## Citation
+If you find this repo useful for your research, please consider citing the paper
+```
+@inproceedings{zhao2020qamface,
+  title={Qamface: Quadratic Additive Angular Margin Loss For Face Recognition},
+  author={Zhao, He and Shi, Yongjie and Tong, Xin and Ying, Xianghua and Zha, Hongbin},
+  booktitle={2020 IEEE International Conference on Image Processing (ICIP)},
+  pages={1901--1905},
+  year={2020},
+  organization={IEEE}
+}
+```
